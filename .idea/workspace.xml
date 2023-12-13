@@ -5,20 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87249922-efcf-45b2-897d-10037f8118c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/optimize_machine_parameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/predict_quality.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/preprocesing_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/train_test_score_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aas2openapi-client/trained_models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AutomatedQualityControl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutomatedQualityControl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Anwendungen/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/get_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/tests/get_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/load_model_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/load_model_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/predict.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aas2openapi-client/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/load_model_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/load_model_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/optimize_machine_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/optimize_machine_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/predict_quality.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/predict_quality.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/preprocesing_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/preprocesing_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/Anwendungen/train_test_score_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/train_test_score_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/get_item_quality_data_aas_item_id_production_times_get.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/post_item_quality_data_aas_post.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/post_item_quality_data_aas_post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_procedure_put.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_procedure_put.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_production_times_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_put.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_put.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_quality_data_put.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_quality_data_put.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_resource_put.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/api/quality_data_aas/put_item_quality_data_aas_item_id_resource_put.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/machine_parameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/machine_parameter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_machine_parameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_machine_parameter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_values_machine_parameter.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_values_machine_parameter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_values_process_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/new_values_process_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/part_production_time.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/procedure.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/procedure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/process_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/process_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/production_times.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/put_item_quality_data_aas_item_id_production_times_put_response_put_item_qualitydataaas_item_id_productiontimes_put.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data_aas.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_data_aas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/quality_feature.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/result.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/aas2openapi_client/models/result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aas2openapi-client/tests/get_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/aas2openapi-client/get_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,24 +64,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kim0_/Projekt2_AutonomQualityControl&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/kim0_/QualityDataModellPython",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kim0_\Projekt2_AutonomQualityControl\aas2openapi-client" />
       <recent name="C:\Users\kim0_\Projekt2_AutonomQualityControl\aas2openapi-client\tests" />
       <recent name="C:\Users\kim0_\Projekt2_AutonomQualityControl\aas2openapi-client\Anwendungen" />
-      <recent name="C:\Users\kim0_\Projekt2_AutonomQualityControl\aas2openapi-client" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,7 +93,9 @@
       <option name="presentableId" value="Default" />
       <updated>1702336879662</updated>
       <workItem from="1702336882050" duration="1758000" />
-      <workItem from="1702374300172" duration="5528000" />
+      <workItem from="1702374300172" duration="6015000" />
+      <workItem from="1702380393063" duration="1895000" />
+      <workItem from="1702453042292" duration="1552000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <option name="closed" value="true" />
@@ -85,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702341885852</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mlp, svr">
+      <option name="closed" value="true" />
+      <created>1702379920423</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702379920423</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="mlp, svr" />
+    <option name="LAST_COMMIT_MESSAGE" value="mlp, svr" />
   </component>
 </project>

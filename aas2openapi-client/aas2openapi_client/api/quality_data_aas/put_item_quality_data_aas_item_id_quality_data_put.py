@@ -100,7 +100,13 @@ def sync_detailed(
 
     Args:
         item_id (str):
-        json_body (QualityData):
+        json_body (QualityData): Base class for all submodels.
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
+                semantic_id (str, optional): Semantic id of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -140,7 +146,13 @@ def sync(
 
     Args:
         item_id (str):
-        json_body (QualityData):
+        json_body (QualityData): Base class for all submodels.
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
+                semantic_id (str, optional): Semantic id of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -173,7 +185,13 @@ async def asyncio_detailed(
 
     Args:
         item_id (str):
-        json_body (QualityData):
+        json_body (QualityData): Base class for all submodels.
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
+                semantic_id (str, optional): Semantic id of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -211,7 +229,13 @@ async def asyncio(
 
     Args:
         item_id (str):
-        json_body (QualityData):
+        json_body (QualityData): Base class for all submodels.
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
+                semantic_id (str, optional): Semantic id of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.

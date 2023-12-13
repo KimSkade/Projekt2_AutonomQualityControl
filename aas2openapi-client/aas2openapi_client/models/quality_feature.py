@@ -13,24 +13,35 @@ T = TypeVar("T", bound="QualityFeature")
 
 @attr.s(auto_attribs=True)
 class QualityFeature:
-    """
-    Attributes:
-        id_short (str):
-        feature_type (str):
-        function (str):
-        inspection_equipment (str):
-        unit (str):
-        upper_warning_limit (float):
-        lower_warning_limit (float):
-        upper_control_limit (float):
-        lower_control_limit (float):
-        target_value (float):
-        upper_tolerance (float):
-        lower_tolerance (float):
-        result (Result):
-        description (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
-        sample_size (Union[Unset, int]):
+    """Base class for all submodel element collections.
+
+    Args:
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            feature_type (str):
+            function (str):
+            inspection_equipment (str):
+            unit (str):
+            upper_warning_limit (float):
+            lower_warning_limit (float):
+            upper_control_limit (float):
+            lower_control_limit (float):
+            target_value (float):
+            upper_tolerance (float):
+            lower_tolerance (float):
+            result (Result): Base class for all submodel element collections.
+
+                Args:
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
+            sample_size (Union[Unset, int]):
     """
 
     id_short: str

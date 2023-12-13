@@ -14,25 +14,38 @@ T = TypeVar("T", bound="Resource")
 
 @attr.s(auto_attribs=True)
 class Resource:
-    """
-    Attributes:
-        id (str):
-        machine_parameter (List['MachineParameter']):
-        new_machine_parameter (NewMachineParameter):
-        description (Union[Unset, str]):
-        id_short (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
+    """Base class for all submodels.
+
+    Args:
+        id (str): Global id of the object.
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            id (str):
+            machine_parameter (List['MachineParameter']):
+            new_machine_parameter (NewMachineParameter): Base class for all submodel element collections.
+
+                Args:
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
     """
 
+    id_short: str
     id: str
     machine_parameter: List["MachineParameter"]
     new_machine_parameter: "NewMachineParameter"
     description: Union[Unset, str] = UNSET
-    id_short: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
+        id_short = self.id_short
         id = self.id
         machine_parameter = []
         for machine_parameter_item_data in self.machine_parameter:
@@ -43,22 +56,20 @@ class Resource:
         new_machine_parameter = self.new_machine_parameter.to_dict()
 
         description = self.description
-        id_short = self.id_short
         semantic_id = self.semantic_id
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
         field_dict.update(
             {
-                "id_": id,
+                "id_short": id_short,
+                "id": id,
                 "machine_parameter": machine_parameter,
                 "new_machine_parameter": new_machine_parameter,
             }
         )
         if description is not UNSET:
             field_dict["description"] = description
-        if id_short is not UNSET:
-            field_dict["id_short"] = id_short
         if semantic_id is not UNSET:
             field_dict["semantic_id"] = semantic_id
 
@@ -70,7 +81,9 @@ class Resource:
         from ..models.new_machine_parameter import NewMachineParameter
 
         d = src_dict.copy()
-        id = d.pop("id_")
+        id_short = d.pop("id_short")
+
+        id = d.pop("id")
 
         machine_parameter = []
         _machine_parameter = d.pop("machine_parameter")
@@ -83,16 +96,14 @@ class Resource:
 
         description = d.pop("description", UNSET)
 
-        id_short = d.pop("id_short", UNSET)
-
         semantic_id = d.pop("semantic_id", UNSET)
 
         resource = cls(
+            id_short=id_short,
             id=id,
             machine_parameter=machine_parameter,
             new_machine_parameter=new_machine_parameter,
             description=description,
-            id_short=id_short,
             semantic_id=semantic_id,
         )
 

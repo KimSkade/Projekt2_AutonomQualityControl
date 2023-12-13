@@ -9,14 +9,20 @@ T = TypeVar("T", bound="MachineParameter")
 
 @attr.s(auto_attribs=True)
 class MachineParameter:
-    """
-    Attributes:
-        id_short (str):
-        value_min (float):
-        value_max (float):
-        value_description (str):
-        description (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
+    """Base class for all submodel element collections.
+
+    Args:
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            value_min (float):
+            value_max (float):
+            value_description (str):
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
     """
 
     id_short: str

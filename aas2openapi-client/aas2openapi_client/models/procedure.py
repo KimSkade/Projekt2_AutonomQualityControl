@@ -13,42 +13,53 @@ T = TypeVar("T", bound="Procedure")
 
 @attr.s(auto_attribs=True)
 class Procedure:
-    """
-    Attributes:
-        id (str):
-        process_data (ProcessData):
-        description (Union[Unset, str]):
-        id_short (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
+    """Base class for all submodels.
+
+    Args:
+        id (str): Global id of the object.
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            id (str):
+            process_data (ProcessData): Base class for all submodel element collections.
+
+                Args:
+                    id_short (str): Local id of the object.
+                    description (str, optional): Description of the object. Defaults to None.
+                    semantic_id (str, optional): Semantic id of the object. Defaults to None.
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
     """
 
+    id_short: str
     id: str
     process_data: "ProcessData"
     description: Union[Unset, str] = UNSET
-    id_short: Union[Unset, str] = UNSET
     semantic_id: Union[Unset, str] = UNSET
     additional_properties: Dict[str, Any] = attr.ib(init=False, factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
+        id_short = self.id_short
         id = self.id
         process_data = self.process_data.to_dict()
 
         description = self.description
-        id_short = self.id_short
         semantic_id = self.semantic_id
 
         field_dict: Dict[str, Any] = {}
         field_dict.update(self.additional_properties)
         field_dict.update(
             {
-                "id_": id,
+                "id_short": id_short,
+                "id": id,
                 "process_data": process_data,
             }
         )
         if description is not UNSET:
             field_dict["description"] = description
-        if id_short is not UNSET:
-            field_dict["id_short"] = id_short
         if semantic_id is not UNSET:
             field_dict["semantic_id"] = semantic_id
 
@@ -59,21 +70,21 @@ class Procedure:
         from ..models.process_data import ProcessData
 
         d = src_dict.copy()
-        id = d.pop("id_")
+        id_short = d.pop("id_short")
+
+        id = d.pop("id")
 
         process_data = ProcessData.from_dict(d.pop("process_data"))
 
         description = d.pop("description", UNSET)
 
-        id_short = d.pop("id_short", UNSET)
-
         semantic_id = d.pop("semantic_id", UNSET)
 
         procedure = cls(
+            id_short=id_short,
             id=id,
             process_data=process_data,
             description=description,
-            id_short=id_short,
             semantic_id=semantic_id,
         )
 

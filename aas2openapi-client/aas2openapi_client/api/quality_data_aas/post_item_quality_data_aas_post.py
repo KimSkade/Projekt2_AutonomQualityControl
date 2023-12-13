@@ -75,7 +75,12 @@ def sync_detailed(
     """Post Item
 
     Args:
-        json_body (QualityDataAAS):
+        json_body (QualityDataAAS): Base class for all Asset Administration Shells (AAS).
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -106,7 +111,12 @@ def sync(
     """Post Item
 
     Args:
-        json_body (QualityDataAAS):
+        json_body (QualityDataAAS): Base class for all Asset Administration Shells (AAS).
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -130,7 +140,12 @@ async def asyncio_detailed(
     """Post Item
 
     Args:
-        json_body (QualityDataAAS):
+        json_body (QualityDataAAS): Base class for all Asset Administration Shells (AAS).
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.
@@ -159,7 +174,12 @@ async def asyncio(
     """Post Item
 
     Args:
-        json_body (QualityDataAAS):
+        json_body (QualityDataAAS): Base class for all Asset Administration Shells (AAS).
+
+            Args:
+                id (str): Global id of the object.
+                id_short (str): Local id of the object.
+                description (str, optional): Description of the object. Defaults to None.
 
     Raises:
         errors.UnexpectedStatus: If the server returns an undocumented status code and Client.raise_on_unexpected_status is True.

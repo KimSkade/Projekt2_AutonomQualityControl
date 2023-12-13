@@ -9,16 +9,22 @@ T = TypeVar("T", bound="NewResults")
 
 @attr.s(auto_attribs=True)
 class NewResults:
-    """
-    Attributes:
-        id_short (str):
-        measurement_date (str):
-        value (float):
-        result_check (bool):
-        part_counter (str):
-        description (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
-        sample_number (Union[Unset, str]):
+    """Base class for all submodel element collections.
+
+    Args:
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            measurement_date (str):
+            value (float):
+            result_check (bool):
+            part_counter (str):
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
+            sample_number (Union[Unset, str]):
     """
 
     id_short: str

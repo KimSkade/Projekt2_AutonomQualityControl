@@ -9,13 +9,19 @@ T = TypeVar("T", bound="NewValuesMachineParameter")
 
 @attr.s(auto_attribs=True)
 class NewValuesMachineParameter:
-    """
-    Attributes:
-        id_short (str):
-        timestamp (str):
-        value (List[float]):
-        description (Union[Unset, str]):
-        semantic_id (Union[Unset, str]):
+    """Base class for all submodel element collections.
+
+    Args:
+        id_short (str): Local id of the object.
+        description (str, optional): Description of the object. Defaults to None.
+        semantic_id (str, optional): Semantic id of the object. Defaults to None.
+
+        Attributes:
+            id_short (str):
+            timestamp (str):
+            value (List[float]):
+            description (Union[Unset, str]):
+            semantic_id (Union[Unset, str]):
     """
 
     id_short: str
